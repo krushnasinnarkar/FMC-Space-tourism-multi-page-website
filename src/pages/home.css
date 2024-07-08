@@ -1,0 +1,128 @@
+.homePage {
+  min-height: 100vh;
+  background-image: url("/FMC-Space-tourism-multi-page-website/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+div.homeContent {
+  margin-top: 40px;
+}
+
+h1.space {
+  font-family: var(--ff-serif);
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: hsl(var(--white));
+}
+
+h2.homeSpaceheading2 {
+  font-weight: 400;
+  letter-spacing: var(--ls-1);
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  color: hsl(var(--lightBlue));
+  margin: 0px 0px 24px;
+}
+
+p.homeSpaceDescription {
+  font-size: var(--fs-300);
+  line-height: 1.563rem;
+  color: hsl(var(--lightBlue));
+  margin: 24px 0px 81px;
+}
+
+a.exploreLink {
+  font-size: var(--fs-400);
+  color: hsl(var(--darkBlue));
+  text-transform: uppercase;
+  font-family: var(--ff-serif);
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-color: hsl(var(--white));
+  text-decoration: none;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.exploreLink:is(:hover, :focus) {
+  box-shadow: 0px 0px 0px 4rem hsl(var(--white), 0.13);
+  outline: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .homePage {
+    background-image: url("/FMC-Space-tourism-multi-page-website/home/background-home-tablet.jpg");
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  h1.space {
+    font-size: var(--fs-900);
+  }
+
+  div.homeContent {
+    margin-top: 108px;
+  }
+
+  h2.homeSpaceheading2 {
+    font-size: var(--fs-400);
+  }
+
+  .homePage {
+    padding: 6.625rem 12rem 5.625rem;
+  }
+
+  a.exploreLink {
+    width: 242px;
+    height: 242px;
+    font-size: var(--fs-600);
+  }
+
+  p.homeSpaceDescription {
+    margin-bottom: 156px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .homePage {
+    background-image: url("/FMC-Space-tourism-multi-page-website/home/background-home-desktop.jpg");
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 131px;
+    justify-content: space-between;
+  }
+
+  h2.homeSpaceheading2 {
+    font-size: var(--fs-500);
+  }
+
+  p.homeSpaceDescription {
+    font-size: var(--fs-400);
+    margin-bottom: 0px;
+    line-height: 2rem;
+  }
+
+  div.homeContent {
+    width: 483px;
+  }
+
+  a.exploreLink {
+    width: 274px;
+    height: 274px;
+  }
+
+  a.exploreLink:is(:hover, :focus) {
+    box-shadow: 0px 0px 0px 5.5rem hsl(var(--white), 0.13);
+  }
+}

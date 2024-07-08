@@ -1,0 +1,241 @@
+/* ----------------------- */
+/* -- background images -- */
+/* ----------------------- */
+
+@media only screen and (max-width: 375px) {
+  div.technologyPage {
+    background-image: url("/FMC-Space-tourism-multi-page-website/technology/background-technology-mobile.jpg");
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.technologyPage {
+    background-image: url("/FMC-Space-tourism-multi-page-website/technology/background-technology-tablet.jpg");
+  }
+}
+
+.technologyPage {
+  background-image: url("/FMC-Space-tourism-multi-page-website/technology/background-technology-desktop.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1.techTitle {
+  padding: 88px 0px 32px;
+}
+
+ul.techUL {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 34px auto 26px;
+  max-width: 152px;
+}
+
+li.techList {
+  background-color: hsla(var(--white), 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.techList div.diamond {
+  background-color: hsl(var(--darkBlue));
+  width: 28px;
+  height: 28px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+button.techButton {
+  color: hsl(var(--white));
+  font-family: var(--ff-serif);
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  font-size: var(--fs-300);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+h3.terminology {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-200);
+  font-weight: 400;
+  letter-spacing: var(--ls-3);
+  color: hsl(var(--lightBlue));
+}
+
+h2.techName {
+  font-size: var(--fs-500);
+  font-weight: 400;
+  font-family: var(--ff-serif);
+  margin: 9px 0px 16px;
+}
+
+p.techDescription {
+  font-size: var(--fs-300);
+  color: hsl(var(--lightBlue));
+  line-height: 1.7rem;
+  max-width: 327px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+picture.techImage {
+  max-width: 100%;
+  max-height: inherit;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- */
+/* - large screen size - */
+/* ---------------------- */
+
+@media only screen and (min-width: 650px) {
+  h1.techTitle {
+    padding: 136px 0px 60px 39px;
+  }
+
+  ul.techUL {
+    max-width: 212px;
+    margin: 56px auto 44px;
+  }
+
+  li.techList {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  li.techList div.diamond {
+    width: 43px;
+    height: 43px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+    left: 9px;
+  }
+
+  button.techButton {
+    font-size: var(--fs-400);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  h3.terminology {
+    font-size: var(--fs-300);
+  }
+
+  h2.techName {
+    font-size: var(--fs-700);
+    margin: 16px 0px 16px;
+  }
+
+  p.techDescription {
+    line-height: 1.75rem;
+    max-width: 458px;
+    padding-bottom: 100px;
+  }
+
+}
+
+/* ---------------------- */
+/*- largest screen size - */
+/* ---------------------- */
+
+@media only screen and (min-width:1000px) {
+  .technologyPage {
+    padding: 212px 0px 101px 166px;
+    text-align: left;
+  }
+
+  div.techContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1.techTitle {
+    padding: 0px 0px 26px 0px;
+  }
+
+  h2.techName {
+    font-size: var(--fs-800);
+    margin: 11px 0px 17px;
+  }
+
+  p.techDescription {
+    max-width: 444px;
+    font-size: var(--fs-400);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ul.techUL {
+    order: 1;
+    flex-direction: column;
+    min-height: 304px;
+    margin-right: 80px;
+  }
+
+  section.techSec {
+    order: 2;
+    flex: 1;
+  }
+
+  div.ImageContainer {
+    order: 3;
+  }
+
+  li.techList {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  li.techList div.diamond {
+    width: 56px;
+    height: 56px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
+  button.techButton {
+    font-size: var(--fs-600);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+}
+
+@media (hover:hover) {
+  button.techButton:hover {
+    background-color: hsl(var(--darkBlue));
+    border: 1px solid hsl(var(--white));
+    color: hsl(var(--white));
+  }
+}
+
+button.activeTech {
+  background-color: hsl(var(--white));
+  color: hsl(var(--darkBlue));
+}

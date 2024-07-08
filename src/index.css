@@ -1,0 +1,186 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* Color  */
+
+  --darkBlue: 230, 35%, 7%;
+  --lightBlue: 231, 77%, 90%;
+  --white: 0, 0%, 100%;
+
+  /* Fonts Sizes */
+
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem; /* 56px */
+  --fs-600: 2rem;
+  --fs-500: 1.75rem; /*28px */
+  --fs-400: 1.125rem; /* 18px */
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* Font Families  */
+
+  --ff-serif: "bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+
+  /* Letter Spacing  */
+
+  --ls-1: 0.295rem; /* 4.72px */
+  --ls-2: 0.169rem; /* 2.7px */
+  --ls-3: 0.147rem; /* 2.36px */
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Set up the body          */
+
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: 1.125em;
+  background-color: hsl(var(--darkBlue));
+  color: hsl(var(--white));
+  line-height: 1;
+  min-height: 100vh;
+  max-width: 100vw;
+  /* overflow: hidden; */
+}
+
+/* setting images        */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility Classes     */
+/* ------------------- */
+
+/* Colors  */
+
+.bg-dark {
+  background-color: hsl(var(--darkBlue));
+}
+.bg-light {
+  background-color: hsl(var(--lightBlue));
+}
+.bg-white {
+  background-color: hsl(var(--white));
+}
+
+/* Text */
+
+.text-dark {
+  color: hsl(var(--darkBlue));
+}
+.text-light {
+  color: hsl(var(--lightBlue));
+}
+.text-white {
+  color: hsl(var(--white));
+}
+
+/* Typography  */
+
+.font-serif {
+  font-family: var(--ff-serif);
+  font-weight: 400;
+}
+.font-barlow-cond {
+  font-family: var(--ff-sans-cond);
+}
+.font-sans-norm {
+  font-family: var(--ff-sans-normal);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* for Numbers */
+
+.numbered-title {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-300);
+  letter-spacing: var(--ls-2);
+  font-weight: bold;
+}
+
+/* ---------------------- */
+/* -- All Pages H1 designing 
+except home page  --------*/
+/* ---------------------- */
+
+h1.pagesHeading1 {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-300);
+  font-weight: 400;
+  letter-spacing: var(--ls-2);
+}
+h1.pagesHeading1 span{
+  color:hsla(var(--white),0.25);
+  padding-right: 18px;
+}
+
+@media only screen and (min-width:650px){
+  h1.pagesHeading1{
+    text-align: left;
+        font-size: var(--fs-400);
+  }
+  h1.pagesHeading1 span{
+    font-size: var(--fs-400);
+}
+}
+@media only screen and (min-width:1000px){
+  h1.pagesHeading1{
+    font-size: var(--fs-500);
+        letter-spacing: var(--ls-1);
+  }
+  h1.pagesHeading1 span{
+    font-size: var(--fs-500);
+  }
+}
+
+/* ---------------------- */
+/* -----  Animation ----- */
+/* ---------------------- */
+
+.fade-in{
+  opacity: 1;
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from{
+      transform: translateX(-10%);
+      opacity: 0;
+  }
+  to{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
